@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD SYSTEM</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stayle.css" />
+  </head>
+  <body>
+    <div class="container rounded-3 bg-light my-5 py-5 text-center">
+      <h1 class="pb-4 text-center">SITEMARK</h1>
+      <div class="">
+        <div class="d-flex align-items-center">
+          <i class="me-3 fa-solid fa-book-bookmark"></i>
+          <h2>site name</h2>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="siteName"
+            placeholder=""
+          />
+          <label for="floatingInput">Site Name</label>
+        </div>
+      </div>
+      <div class="">
+        <div class="d-flex align-items-center">
+          <i class="me-3 fa-solid fa-link"></i>
+          <h2>site URL</h2>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="siteUrl" placeholder="" />
+          <label for="floatingInput">Site URL</label>
+        </div>
+        <button onclick="addSite()" class="mt-4 btn btn-outline-primary px-5">
+          SUBMIT
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table mt-4 bg-light text-center">
+        <thead >
+          <tr>
+            <th class=" text-capitalize">index</th>
+            <th class="text-capitalize">web site name</th>
+            <th class="text-capitalize">visit</th>
+            <th class="text-capitalize">delete</th>
+          </tr>
+        </thead>
+        <tbody id="siteTable">
+          <!-- <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="btn btn-outline-success"><a href="https://www.google.com/">visit</a></button>
+            </td>
+            <td>
+              <button class="btn btn-outline-danger">delete</button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
